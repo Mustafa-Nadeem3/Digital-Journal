@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Logo Link -->
+  <link rel="icon" href="/images/logo.png" />
+  <title>Chronicle Keeper</title>
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- Font Awesome Icons Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- Font Style Link -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <!-- My CSS Link -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- SideMenu Section -->
+  <section id="side-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-primary fw-bold text-center p-3" id="name"></h2>
+          <div class="col-12 p-3 activelink mb-2 shadow">
+            <a href="/dashboard.html" class="text-decoration-none"><i
+                class="fa-solid fa-book-open me-2"></i>Dashboard</a>
+          </div>
+          <div class="col-12 p-3 dashlink mb-2 shadow">
+            <a href="/to-do.html" class="text-decoration-none"><i class="fa-solid fa-list-check me-2"></i>To-Do</a>
+          </div>
+          <div class="col-12 p-3 dashlink mb-2 shadow">
+            <a href="/journal.html" class="text-decoration-none"><i class="fa-solid fa-book me-2"></i>Journal</a>
+          </div>
+          <div class="col-12 p-3 dashlink mb-2 shadow">
+            <a href="/password.html" class="text-decoration-none"><i class="fa-solid fa-lock me-2"></i>Password</a>
+          </div>
+          <div class="col-12 p-3 logoutlink shadow">
+            <a href="/index.html" class="text-decoration-none"><i
+                class="fa-solid fa-arrow-right-from-bracket me-2"></i>Close Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Section -->
+  <section id="dashboard">
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col-12 mobile_navbar">
+          <div class="d-flex justify-content-start align-items-center">
+            <h1 class="fw-bold text-primary me-3 pt-2">Dashboard</h1>
+            <button class="bg-secondary border-3 border border-primary rounded-circle" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="name">
+              <div class="offcanvas-header justify-content-end">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <h2 class="text-primary fw-bold text-center p-3" id="name"></h2>
+                <div class="col-12 p-3 activelink mb-2 shadow">
+                  <a href="/dashboard.html" class="text-decoration-none"><i
+                      class="fa-solid fa-book-open me-2"></i>Dashboard</a>
+                </div>
+                <div class="col-12 p-3 dashlink mb-2 shadow">
+                  <a href="/to-do.html" class="text-decoration-none"><i
+                      class="fa-solid fa-list-check me-2"></i>To-Do</a>
+                </div>
+                <div class="col-12 p-3 dashlink mb-2 shadow">
+                  <a href="/journal.html" class="text-decoration-none"><i class="fa-solid fa-book me-2"></i>Journal</a>
+                </div>
+                <div class="col-12 p-3 dashlink mb-2 shadow">
+                  <a href="/password.html" class="text-decoration-none"><i
+                      class="fa-solid fa-lock me-2"></i>Password</a>
+                </div>
+                <div class="col-12 p-3 logoutlink shadow">
+                  <a href="/index.html" class="text-decoration-none"><i
+                      class="fa-solid fa-arrow-right-from-bracket me-2"></i>Close Book</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center mobile-page">
+          <div class="col-lg-6 col-sm-12 book page shadow">
+            <div class="row left-page shadow">
+              <div class="col-12 left-page-1 shadow text-center p-5">
+                <h1 class="text-primary fw-bold mt-5">Welcome!</h1>
+                <h6 class="text-primary-alt fw-normal mb-3 fw-bold">Todays Quote</h6>
+                <p class="text-primary-alt quote"><i class="fa-solid fa-quote-left quote-icon-left"></i><span
+                    id="quote"></span><i class="fa-solid fa-quote-right quote-icon-right"></i></p>
+                <p class="text-end quote">- <span id="author"></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 book page shadow">
+            <div class="row right-page shadow">
+              <div class="col-12 right-page-1 shadow">
+                <div class="col-3 dash-card d-flex p-3 mb-3">
+                  <div class="col-6 d-flex justify-content-center">
+                    <i class="fa-solid fa-list-check d-flex justify-content-center align-items-center"></i>
+                  </div>
+                  <div class="col-6">
+                    <div class="card-body">
+                      <h6 class="card-title text-start text-primary-alt">Tasks</h6>
+                      <p class="card-text text-primary-alt" id="todo"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 dash-card d-flex p-3 mb-3">
+                  <div class="col-6 d-flex justify-content-center">
+                    <i class="fa-solid fa-book d-flex justify-content-center align-items-center"></i>
+                  </div>
+                  <div class="col-6">
+                    <div class="card-body">
+                      <h6 class="card-title text-start text-primary-alt">Logs</h6>
+                      <p class="card-text text-primary-alt" id="journal"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 dash-card d-flex p-3">
+                  <div class="col-6 d-flex justify-content-center">
+                    <i class="fa-solid fa-lock d-flex justify-content-center align-items-center"></i>
+                  </div>
+                  <div class="col-6">
+                    <div class="card-body">
+                      <h6 class="card-title text-start text-primary-alt">Passkeys</h6>
+                      <p class="card-text text-primary-alt" id="password"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <!-- My JS Link -->
+  <script type="module">
+    fetch("https://api.quotable.io/random")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("quote").innerHTML = data.content
+        document.getElementById("author").innerHTML = data.author
+      })
+
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"
+    import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-database.js"
+
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDMn2keSNKTwhA41-7ApI_iWckrLNJYvgM",
+      authDomain: "chronicle-keeper-92380.firebaseapp.com",
+      databaseURL: "https://chronicle-keeper-92380-default-rtdb.firebaseio.com",
+      projectId: "chronicle-keeper-92380",
+      storageBucket: "chronicle-keeper-92380.appspot.com",
+      messagingSenderId: "830785207681",
+      appId: "1:830785207681:web:0ae18b9db8f147ee5cfc80",
+      measurementId: "G-WRH64WKX1W"
+    }
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig)
+    const db = getDatabase(app)
+
+    document.getElementById("name").innerHTML = localStorage.getItem('currentUserName')
+
+    const todoRef = ref(db, 'todo')
+    const journalRef = ref(db, 'journal')
+    const passwordRef = ref(db, 'password')
+
+    get(todoRef)
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          const todoCount = Object.keys(snapshot.val()).length
+          document.getElementById('todo').innerHTML = todoCount
+        } else {
+          console.log("No data available")
+        }
+      })
+      .catch((error) => {
+        console.error("Error retrieving data:", error)
+      })
+
+    get(journalRef)
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          const journalCount = Object.keys(snapshot.val()).length
+          document.getElementById('journal').innerHTML = journalCount
+        } else {
+          console.log("No data available")
+        }
+      })
+      .catch((error) => {
+        console.error("Error retrieving data:", error)
+      })
+
+    get(passwordRef)
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          const passwordCount = Object.keys(snapshot.val()).length
+          document.getElementById('password').innerHTML = passwordCount
+        } else {
+          console.log("No data available")
+        }
+      })
+      .catch((error) => {
+        console.error("Error retrieving data:", error)
+      })
+  </script>
+</body>
+
+</html>

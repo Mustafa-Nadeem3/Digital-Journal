@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Logo Link -->
+  <link rel="icon" href="/images/logo.png" />
+  <title>Chronicle Keeper</title>
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- Font Awesome Icons Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- Font Style Link -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <!-- My CSS Link -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-secondary">
+  <!-- Header Section -->
+  <header>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex" href="#home">
+          <img src="/images/logo.png" alt="Logo" class="logo">
+          <h5 class="d-flex justify-content-center align-items-center">Chronicle <br> Keeper</h5>
+        </a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-primary" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#comment">Comment</a>
+              </li>
+              <li class="nav-item join dropdown">
+                <a class="nav-link join-link text-primary" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Join Us
+                </a>
+                <ul class="dropdown-menu bg-white">
+                  <li><a class="dropdown-item text-primary fw-bold" href="/login.html">Login</a></li>
+                  <li><a class="dropdown-item text-primary fw-bold" href="/register.html">Sign Up</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+
+        </div>
+        <div class="dark-mode-btn">
+          <!-- To Do -->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container">
+      <h1 class="text-secondary"><span class="animation1" data-text1="Welcome To ">Welcome To </span><br> <span
+          class="animation2" data-text2="Chronicle Keeper">Chronicle Keeper</span></h1>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-lg-4 col-sm-1">
+          <div class="card me-auto">
+            <div class="card-body feature1">
+              <h2 class="card-title text-center text-primary">To-Do List</h2>
+              <p class="card-text">Our app offers a robust to-do list that helps users stay organized and manage their
+                tasks effectively. Users can create, prioritize, and update tasks with due dates. The integrated
+                reminder feature sends timely notifications to ensure important deadlines are not missed. Users can
+                easily stay on top of their to-do list and increase productivity.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-1">
+          <div class="card">
+            <div class="card-body feature2">
+              <h2 class="card-title text-center text-primary">Own Journal</h2>
+              <p class="card-text">Our app combines the power of journaling with an integrated calendar. Users can
+                effortlessly document their thoughts and experiences in journal entries while organizing them within a
+                visual calendar interface. With easy navigation and search capabilities, users can reflect on their
+                personal journey and cherish meaningful moments over time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-1">
+          <div class="card">
+            <div class="card-body feature3">
+              <h2 class="card-title text-center text-primary">Password Manager</h2>
+              <p class="card-text">Our app provides a secure password manager that allows users to store and organize
+                their passwords. With hash decryption capabilities, users can retrieve their passwords while maintaining
+                encryption. The app ensures the secure storage of passwords and may offer a password generator for
+                enhanced security.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comment Section -->
+  <section id="comment">
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-12">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 mt-5">
+          <div class="col-lg-6 col-sm-12 mx-auto">
+            <form action="">
+              <div class="form-floating mb-3">
+                <input type="name" class="form-control" id="name" placeholder="Enter Name">
+                <label for="name">Name</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="customerComment"></textarea>
+                <label for="customerComment">Comment</label>
+              </div>
+              <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5" title="Excellent"></label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" title="Very Good"></label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" title="Good"></label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" title="Fair"></label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1" title="Very Poor"></label>
+              </div>
+              <div class="text-center">
+                <button id="submit" type="submit"
+                  class="border border-2 border-primary rounded-pill p-3 bg-secondary text-primary fw-bold">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-lg-6 col-sm-12 text-center">
+          <a class="d-flex justify-content-center text-decoration-none mb-3" href="#home">
+            <img src="/images/alt_logo.png" alt="Alternate Logo" class="logo">
+            <h4 class="d-flex justify-content-center align-items-center text-secondary">Chronicle <br> Keeper</h4>
+          </a>
+          <p>
+            Our app combines a to-do list with reminders, a journal with a calendar, and a password manager with hash
+            decryption. Users can stay organized, set reminders for tasks, reflect on past experiences with journal
+            entries linked to dates, and securely store and access their passwords. It offers a comprehensive and
+            convenient solution for productivity, reflection, and password management in a single app.
+          </p>
+          <div class="links">
+            <a href="" class="text-secondary ms-3"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="text-secondary ms-3"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="text-secondary ms-3"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="text-secondary ms-3"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-12 mb-lg-0">
+          <h2>Links</h2>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-secondary">Home</a></li>
+            <li><a href="#" class="text-decoration-none text-secondary">About</a></li>
+            <li><a href="#" class="text-decoration-none text-secondary">Comment</a></li>
+            <li><a href="#" class="text-decoration-none text-secondary">Login</a></li>
+            <li><a href="#" class="text-decoration-none text-secondary">Register</a></li>
+            <li><a href="#" class="text-decoration-none text-secondary">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12 text-center">
+          <h3 class="mb-3">Sign Up for Our Newsletter</h3>
+          <form action="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="Enter Email Address">
+              <label for="floatingInput">Email Address</label>
+            </div>
+            <div>
+              <button type="submit"
+                class="border border-2 border-secondary rounded-pill p-3 bg-primary text-secondary fw-bold">Sign
+                Up</button>
+            </div>
+          </form>
+        </div>
+        <hr class="my-3">
+        <div class="col-12 d-flex justify-content-center">
+          <p>© All Rights Reserved by Chronicle Keeper. Powered by Mustafa Nadeem</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <!-- My JS Link -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"
+    import { getDatabase, ref, set, push, get } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-database.js"
+
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDMn2keSNKTwhA41-7ApI_iWckrLNJYvgM",
+      authDomain: "chronicle-keeper-92380.firebaseapp.com",
+      databaseURL: "https://chronicle-keeper-92380-default-rtdb.firebaseio.com",
+      projectId: "chronicle-keeper-92380",
+      storageBucket: "chronicle-keeper-92380.appspot.com",
+      messagingSenderId: "830785207681",
+      appId: "1:830785207681:web:0ae18b9db8f147ee5cfc80",
+      measurementId: "G-WRH64WKX1W"
+    }
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig)
+    const db = getDatabase(app)
+
+    const commentRef = ref(db, 'comment')
+    const newCommentRef = push(commentRef)
+    let rating = 0
+
+    document.getElementById("star5").addEventListener('click', function () {
+      rating = document.getElementById("star5").value
+    })
+
+    document.getElementById("star4").addEventListener('click', function () {
+      rating = document.getElementById("star4").value
+    })
+
+    document.getElementById("star3").addEventListener('click', function () {
+      rating = document.getElementById("star3").value
+    })
+
+    document.getElementById("star2").addEventListener('click', function () {
+      rating = document.getElementById("star2").value
+    })
+
+    document.getElementById("star1").addEventListener('click', function () {
+      rating = document.getElementById("star1").value
+    })
+
+    document.getElementById("submit").addEventListener('click', function (e) {
+      e.preventDefault()
+
+      set(newCommentRef, {
+        name: document.getElementById("name").value,
+        comment: document.getElementById("customerComment").value,
+        rating: rating
+      })
+        .then(() => {
+          alert("Thank you for your feedback.")
+          window.location.href = "/index.html"
+        })
+        .catch((error) => {
+          console.error("Error adding comment: ", error)
+        })
+    })
+
+    get(commentRef)
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          const commentCount = Object.keys(snapshot.val()).length
+          for (let i = 0; i < commentCount; i++) {
+            const userId = Object.keys(snapshot.val())[i]
+            const commentData = snapshot.val()[userId]
+
+            const carouselItem = document.createElement("div")
+            carouselItem.classList.add("carousel-item", "active")
+
+            const card = document.createElement("div")
+            card.classList.add("card", "text-center")
+
+            const cardBody = document.createElement("div")
+            cardBody.classList.add("card-body")
+
+            const cardTitle = document.createElement("h2")
+            cardTitle.classList.add("card-title", "text-primary", "text-center", "mb-3")
+            cardTitle.textContent = commentData.name
+
+            const cardText = document.createElement("p")
+            cardText.classList.add("card-text", "text-primary", "text-center", "fs-5")
+            cardText.textContent = commentData.comment
+
+            const cardRating = document.createElement("p")
+            cardRating.classList.add("card-text", "text-primary", "text-center", "fs-3")
+            for (let j = 0; j < commentData.rating; j++) {
+              cardRating.textContent += '\u2605'
+            }
+
+            cardBody.appendChild(cardTitle)
+            cardBody.appendChild(cardText)
+            cardBody.appendChild(cardRating)
+            card.appendChild(cardBody)
+            carouselItem.appendChild(card)
+
+            const parentElement = document.querySelector(".carousel-inner")
+            parentElement.appendChild(carouselItem)
+          }
+        } else {
+          console.log("No data available")
+        }
+      })
+      .catch((error) => {
+        console.error("Error retrieving data:", error)
+      })
+  </script>
+</body>
+
+</html>
